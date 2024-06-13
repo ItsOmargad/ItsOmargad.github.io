@@ -1,2 +1,2 @@
-# ItsOmargad.github.io
+# itsomargad.github.io
 This is my personal website.
