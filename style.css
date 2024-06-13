@@ -72,7 +72,7 @@ a {
 }
 
 a img {
-    width: 250px;
+    width: 80px;
     border-radius: 10px;
     transition: transform 0.3s;
 }
