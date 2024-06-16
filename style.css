@@ -13,7 +13,7 @@ body {
 }
 
 .container {
-    max-width: 800px;
+    max-width: 90%;
     margin: 0 auto;
     padding: 20px;
 }
@@ -23,32 +23,39 @@ body {
     margin-bottom: 20px;
 }
 
+.section {
+    margin-bottom: 40px;
+}
+
 nav {
     background: black;
     color: #fff;
     display: flex;
     align-items: center;
-    padding: 10px 20px;
-    padding-top: 20px;
+    justify-content: space-between; /* Distribute space between logo, links, and social icons */
+    padding: 5px 20px; /* Reduced padding to make the bar thinner */
 }
 
 nav .logo {
     margin-right: auto;
 }
 
+nav .logo img {
+    width: 50px;
+    height: auto;
+}
+
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Center the nav items */
     flex: 1;
-    padding: 0px;
+    padding: 0;
     margin: 0;
 }
 
 nav ul li {
     margin: 0 15px;
-    margin-top: 5px;
-    padding-right: 50px;
 }
 
 nav ul li a {
@@ -61,7 +68,23 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-h1 {
+nav .social-icons {
+    display: flex;
+    align-items: center;
+}
+
+nav .social-icons a {
+    color: #fff;
+    margin-left: 15px;
+    font-size: 1.5em;
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+}
+
+p {
+    text-align: center;
     margin-bottom: 20px;
 }
 
@@ -72,7 +95,8 @@ a {
 }
 
 a img {
-    width: 80px;
+    width: 100%;
+    max-width: 250px;
     border-radius: 10px;
     transition: transform 0.3s;
 }
@@ -83,7 +107,34 @@ a img:hover {
 
 video {
     display: block;
+    width: 100%;
+    max-width: 640px;
     margin: 0 auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    nav .social-icons {
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        margin-top: 10px;
+    }
 }

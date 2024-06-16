@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,39 +7,55 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-</head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_TRACKING_ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
+      gtag('config', 'YOUR_TRACKING_ID');
+    </script>
+</head>
 <body>
     <nav>
         <a href="#home">
             <div class="logo">
-                <img src="Omargad-nobackground.png" alt="Omargad Logo" width="50">
+                <img src="Omargad-nobackground.png" alt="Omargad Logo">
             </div>
         </a>
-        
         <ul>
             <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
             <li><a href="#stats">Stats</a></li>
             <li><a href="#video">Video</a></li>
         </ul>
+        <div class="social-icons">
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.twitch.tv" target="_blank"><i class="fab fa-twitch"></i></a>
+            <a href="https://www.tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+        </div>
     </nav>
-
     <div class="container">
         <div id="home" class="header">
             <h1>Check out my Valorant stats!</h1>
         </div>
-        <div id="stats">
+        <div id="about" class="section">
+            <h2>About Me</h2>
+            <p>Hi! I'm Omargad, a passionate gamer and Valorant enthusiast. I love exploring new strategies, mastering different agents, and sharing my experiences with fellow gamers. When I'm not gaming, I enjoy coding, exploring new technologies, and connecting with like-minded individuals. Welcome to my personal website where you can find my latest Valorant stats and some cool gaming videos. Let's game on!</p>
+        </div>
+        <div id="stats" class="section">
             <a href="https://tracker.gg/valorant/profile/riot/Omargad%23069/overview" target="_blank">
-                <img src="valTracker.png" width="250">
+                <img src="valTracker.png" alt="Valorant Tracker">
             </a>
         </div>
-        <div id="video">
-            <video width="640" height="360" controls>
+        <div id="video" class="section">
+            <video controls>
                 <source src="CleanAce.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
     </div>
 </body>
-
 </html>
